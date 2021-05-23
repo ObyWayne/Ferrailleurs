@@ -1,0 +1,133 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ferrailleurs" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:spinnerItemStyle"> @style/defaultTitle</item>
+        <item name="android:spinnerDropDownItemStyle"> @style/defaultTitle  </item>
+    </style>
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+
+
+    <!-- style par default -->
+    <style name="defaultTitle">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:fontFamily">@font/sunset_boulevard</item>
+    </style>
+
+    <style name="defaultSearchCategory">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/be_true_to_your_school</item>
+    </style>
+
+    <!-- style for error -->
+    <style name="defaultErrorStyle">
+        <item name="android:textColor">@color/red </item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- style Titre de page -->
+    <style name="Default_Page_title">
+        <item name="android:textColor">@color/Orange</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:fontFamily">@font/be_true_to_your_school</item>
+    </style>
+
+
+
+    <!-- style "en cours" Orange -->
+        <style name="Default_Orange_title">
+            <item name="android:textColor">@color/Orange</item>
+            <item name="android:textSize">30dp</item>
+            <item name="android:fontFamily">@font/be_true_to_your_school</item>
+        </style>
+
+        <style name="Default_Orange">
+            <item name="android:textColor">@color/Orange</item>
+            <item name="android:textSize">20dp</item>
+            <item name="android:fontFamily">@font/be_true_to_your_school</item>
+        </style>
+
+        <style name="Default_Orange_Subtitle">
+            <item name="android:textColor">@color/Orange</item>
+            <item name="android:textSize">15dp</item>
+            <item name="android:fontFamily">@font/be_true_to_your_school</item>
+        </style>
+
+    <!-- style "en cours" Orange -->
+        <style name="Default_white">
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textSize">20dp</item>
+            <item name="android:fontFamily">@font/be_true_to_your_school</item>
+        </style>
+
+        <style name="Default_white_Subtitle">
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textSize">15dp</item>
+            <item name="android:fontFamily">@font/be_true_to_your_school</item>
+        </style>
+
+        <style name="Default_white_add">
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textSize">10dp</item>
+            <item name="android:fontFamily">@font/be_true_to_your_school</item>
+        </style>
+
+
+
+    <!-- style Int messages -->
+    <style name="Int_messageStyle">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/be_true_to_your_school</item>
+    </style>
+
+
+
+    <style name="Default_Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="background">@color/purple_700</item>
+        <item name="android:textSize">8dp</item>
+    </style>
+
+    <!-- Description pieces-->
+    <style name="Default_subtitle_pieces">
+        <item name="android:textColor">@color/LightBlack</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">@font/be_true_to_your_school</item>
+    </style>
+
+    <!-- Description pieces-->
+    <style name="Default_subtitle_popUp">
+        <item name="android:textColor">@color/LightBlack</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:fontFamily">@font/be_true_to_your_school</item>
+    </style>
+
+    <!-- style bottom navigation view-->
+    <style name="Nav_viewStyle" parent="Widget.Design.BottomNavigationView" >
+        <item name="android:textSize">60dp</item>
+        <item name="android:textColor">@color/Orange</item>
+        <item name="android:fontFamily">@font/be_true_to_your_school</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_marginPadding" >5dp</dimen>
+    <dimen name="default_marginLittle" >10dp</dimen>
+    <dimen name="item_margin" >15dp</dimen>
+    <dimen name="default_marginTop" >20dp</dimen>
+    <dimen name="default_marginSmall" >30dp</dimen>
+    <dimen name="default_marginLeft" >50dp</dimen>
+    <dimen name="default_marginLarge" >80dp</dimen>
+    <dimen name="default_marginLong" >100dp</dimen>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_page"
+        android:title="@string/bottom_view_home"
+        android:icon="@drawable/ic_home"
+        />
+    <item
+        android:id="@+id/search_page"
+        android:title="@string/bottom_view_rechercher"
+        android:icon="@drawable/ic_search"
+        />
+    <item
+        android:id="@+id/publish_page"
+        android:title="@string/bottom_view_publier"
+        android:icon="@drawable/ic_empty_add"
+        />
+    <item
+        android:id="@+id/fav_page"
+        android:title="@string/bottom_view_favorie"
+        android:icon="@drawable/ic_empty_favorite"
+        />
+
+    <item
+        android:id="@+id/more_page"
+        android:title="@string/bottom_view_plus"
+        android:icon="@drawable/ic_more"
+        />
+</menu>

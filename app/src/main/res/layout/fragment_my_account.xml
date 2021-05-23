@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue">
+
+
+    <TextView
+        android:id="@+id/My_Account_GlobalInfo"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/My_Account_GlobalInfo"
+        app:layout_constraintBottom_toTopOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/My_Account_BackgroundImage"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@color/Grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <ImageView
+        android:id="@+id/My_Account_EditName"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_edit"
+        android:layout_marginLeft="@dimen/item_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/My_Account_Name"
+        app:layout_constraintStart_toEndOf="@+id/My_Account_Name"
+        app:layout_constraintTop_toTopOf="@+id/My_Account_Name" />
+
+    <ImageView
+        android:id="@+id/My_Account_UserName_InputValidation"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_save"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/My_Account_EditName"
+        app:layout_constraintStart_toEndOf="@+id/My_Account_EditName"
+        app:layout_constraintTop_toTopOf="@+id/My_Account_EditName" />
+
+    <View
+    android:id="@+id/popUp_view_separation"
+    android:layout_width="5dp"
+    android:layout_height="200dp"
+    android:background="@color/Orange"
+    android:visibility="visible"
+    app:layout_constraintBottom_toBottomOf="@+id/My_Account_BackgroundImage"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/My_Account_User_Description" />
+
+    <TextView
+        android:id="@+id/My_Account_Name"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:text="@string/My_Account_InfoName"
+        app:layout_constraintBottom_toTopOf="@+id/My_Account_UserName"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage" />
+
+    <TextView
+        android:id="@+id/My_Account_UserName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/My_Account_InfoName"
+        android:layout_marginTop="@dimen/default_marginLarge"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toTopOf="@+id/My_Account_BackgroundImage" />
+
+    <EditText
+        android:id="@+id/My_Account_UserName_Input"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/My_Account_InfoName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_EditName" />
+
+
+    <ImageView
+        android:id="@+id/My_Account_EditlastName"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_edit"
+        android:layout_marginLeft="@dimen/item_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/My_Account_lastName"
+        app:layout_constraintStart_toEndOf="@+id/My_Account_lastName"
+        app:layout_constraintTop_toTopOf="@+id/My_Account_lastName" />
+
+    <ImageView
+        android:id="@+id/My_Account_EditlastNameValidation"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_save"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/My_Account_EditlastName"
+        app:layout_constraintStart_toEndOf="@+id/My_Account_EditlastName" />
+
+    <TextView
+        android:id="@+id/My_Account_lastName"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/My_Account_InfoLastName"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginLeft="@dimen/item_margin"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_UserName" />
+
+    <TextView
+        android:id="@+id/My_Account_User_lastName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/My_Account_InfoLastName"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_lastName" />
+
+    <EditText
+        android:id="@+id/My_Account_UserlastName_Input"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/My_Account_InfoLastName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_EditlastName" />
+
+    <ImageView
+        android:id="@+id/My_Account_EditDescription"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_edit"
+        android:layout_marginLeft="@dimen/item_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/My_Account_Description"
+        app:layout_constraintStart_toEndOf="@+id/My_Account_Description"
+        app:layout_constraintTop_toTopOf="@+id/My_Account_Description" />
+
+    <ImageView
+        android:id="@+id/My_Account_EditDescriptionValidation"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_save"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/My_Account_EditDescription"
+        app:layout_constraintStart_toEndOf="@+id/My_Account_EditDescription" />
+
+    <TextView
+        android:id="@+id/My_Account_Description"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/My_Account_Description"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginTop="@dimen/item_margin"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_User_lastName" />
+
+    <TextView
+        android:id="@+id/My_Account_User_Description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/My_Account_Description"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_Description" />
+
+    <EditText
+        android:id="@+id/My_Account_User_Description_Input"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/My_Account_Description"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_EditDescription" />
+
+
+    <TextView
+        android:id="@+id/My_Account_User_contact"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/My_Account_UserContact"
+        app:layout_constraintEnd_toStartOf="@+id/popUp_view_separation"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_Contact" />
+
+    <ImageView
+        android:id="@+id/My_Account_EditEmail"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toTopOf="@+id/My_Account_User_contact"
+        app:layout_constraintStart_toEndOf="@+id/My_Account_Contact"
+        app:layout_constraintTop_toTopOf="@+id/My_Account_Contact" />
+
+    <ImageView
+        android:id="@+id/My_Account_EditEmailValidation"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_save"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/My_Account_EditEmail"
+        app:layout_constraintEnd_toStartOf="@+id/My_Account_Contact" />
+
+    <TextView
+        android:id="@+id/My_Account_Contact"
+        style="@style/Default_Orange_Subtitle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/My_Account_contact_information"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/default_marginLarge"
+        app:layout_constraintEnd_toStartOf="@+id/popUp_view_separation"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_User_Description" />
+
+    <EditText
+        android:id="@+id/My_Account_UserEmail_Input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:hint="@string/My_Account_contact_information"
+        app:layout_constraintEnd_toStartOf="@+id/My_Account_EditPassword_Button"
+        app:layout_constraintStart_toStartOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_EditEmail" />
+
+
+
+
+
+    <Button
+        android:id="@+id/My_Account_EditPassword_Button"
+        style="@style/Default_Button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/default_marginLeft"
+        android:text="@string/My_Account_Edit_PW"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toEndOf="@+id/popUp_view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_User_Description" />
+
+    <Button
+        android:id="@+id/My_Account_Logout_Button"
+        style="@style/Default_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/Account_Déconnexion_button"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintTop_toTopOf="@+id/My_Account_BackgroundImage" />
+    <Button
+        android:id="@+id/My_Account_DeleteAccount_Button"
+        style="@style/Default_Button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/My_Account_Suppr"
+        android:layout_marginTop="@dimen/default_marginTop"
+        app:layout_constraintEnd_toEndOf="@+id/My_Account_BackgroundImage"
+        app:layout_constraintStart_toEndOf="@+id/popUp_view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/My_Account_EditPassword_Button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

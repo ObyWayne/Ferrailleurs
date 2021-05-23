@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    android:padding="@dimen/default_marginLeft">
+
+    <TextView
+        android:id="@+id/textView_title_piece1"
+        style="@style/Default_Orange_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/publier_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/publier_input_title"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint="Entrer le nom de la pièce"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title_piece1" />
+
+    <TextView
+        android:id="@+id/publier_addLink"
+        android:layout_marginTop="@dimen/default_marginLittle"
+        style="@style/Default_Orange_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/publier_addLink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_input_title" />
+
+    <EditText
+        android:id="@+id/publier_input_link"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint="Lien vers la pièce"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_addLink" />
+
+    <TextView
+        android:id="@+id/textView_publier_keyWords"
+        style="@style/Default_Orange_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/default_marginLittle"
+        android:text="@string/publier_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_input_link" />
+
+    <EditText
+        android:id="@+id/publier_input_description"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint="Description de la pièce"
+        android:inputType="textCapSentences"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_publier_keyWords" />
+
+    <TextView
+        android:id="@+id/publier_model"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/default_marginLittle"
+        android:text="@string/item_pieces_model"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_input_description" />
+
+
+
+    <EditText
+        android:id="@+id/publier_input_model"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint="@string/publier_Model"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_model" />
+
+    <TextView
+        android:id="@+id/publier_brand"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/default_marginLittle"
+        android:text="@string/item_pieces_brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_input_model" />
+
+    <TextView
+        android:id="@+id/publier_type"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/publier_type"
+        app:layout_constraintBottom_toBottomOf="@+id/publier_brand"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/publier_spinner_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:entries="@array/publier_spinner_brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_brand" />
+
+    <Spinner
+        android:id="@+id/publier_spinner_type"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:entries="@array/publier_spinner_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/publier_type"
+        app:layout_constraintTop_toBottomOf="@+id/publier_type" />
+
+
+
+    <ImageView
+        android:id="@+id/publier_preview_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="centerCrop"
+        android:elevation="@dimen/default_marginSmall"
+        android:src="@drawable/alternateur_2"
+        app:layout_constraintCircleRadius="@dimen/default_marginLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_spinner_brand" />
+
+    <Button
+        android:id="@+id/publier_addImage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/Orange"
+        android:text="@string/publier_dlImage"
+        app:layout_constraintStart_toEndOf="@+id/publier_preview_image"
+        app:layout_constraintTop_toBottomOf="@+id/publier_spinner_brand" />
+
+
+
+    <TextView
+        android:id="@+id/Publish_error_NoConnected_Texte"
+        style="@style/defaultErrorStyle"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@drawable/redborrder"
+        android:text="@string/Error_connected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publier_addImage" />
+
+    <Button
+        android:id="@+id/search_pickUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/Orange"
+        android:text="@string/publier_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Publish_error_NoConnected_Texte" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

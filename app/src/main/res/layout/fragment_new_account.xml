@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Fragment_NewAccount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/Fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LightBlue"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+
+    <TextView
+        android:id="@+id/Account_error_not_all_field"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/redborrder"
+        android:text="@string/Error_not_all_field"
+        android:gravity="center"
+        style="@style/defaultErrorStyle"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_container" />
+
+    <TextView
+        android:id="@+id/Account_error_checkBox"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/redborrder"
+        android:text="@string/Error_checkBox"
+        android:gravity="center"
+        style="@style/defaultErrorStyle"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_container" />
+
+    <TextView
+        android:id="@+id/Account_error_pw_dont_match"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/redborrder"
+        android:text="@string/Error_Password_no_match"
+        android:gravity="center"
+        style="@style/defaultErrorStyle"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_container" />
+
+    <TextView
+        android:id="@+id/Account_error_pw_too_weak"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/redborrder"
+        android:text="@string/Error_Password_too_weak"
+        android:gravity="center"
+        style="@style/defaultErrorStyle"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_container" />
+
+    <TextView
+        android:id="@+id/Account_error_Textview"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/redborrder"
+        android:text="@string/Error_not_all_field"
+        android:gravity="center"
+        style="@style/defaultErrorStyle"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_container" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@color/Grey"
+        app:layout_constraintBottom_toBottomOf="@+id/Fragment_container"
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_container"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_container"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Texte de Connextion dans le compte -->
+    <EditText
+        android:id="@+id/Register_Name_Input"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/New_Account_First_Name_input"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/Register_LastName_Input"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/New_Account_Second_Name_input"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Name_Input" />
+
+    <EditText
+        android:id="@+id/Register_Email_Input"
+        android:inputType="textEmailAddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/New_Account_Email_input"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Register_LastName_Input" />
+
+    <EditText
+        android:id="@+id/Register_Password1_Input"
+        android:inputType="textPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/New_Account_Password_input"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Email_Input" />
+
+    <EditText
+        android:id="@+id/Register_Password2_Input"
+        android:inputType="textPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/New_Account_Password_Confirm_input"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Password1_Input" />
+
+    <EditText
+        android:id="@+id/Register_description_Input"
+        android:inputType="textLongMessage"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/New_Account_Description_input"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Password2_Input" />
+
+    <CheckBox
+        android:id="@+id/Account_checkBox_robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/Register_description_Input"
+        app:layout_constraintTop_toBottomOf="@+id/Register_description_Input" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/New_Account_Robot"
+        app:layout_constraintBottom_toBottomOf="@+id/Account_checkBox_robot"
+        app:layout_constraintStart_toEndOf="@+id/Account_checkBox_robot"
+        app:layout_constraintTop_toTopOf="@+id/Account_checkBox_robot" />
+
+    <ImageView
+        android:id="@+id/Register_Validation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_validation"
+        app:layout_constraintEnd_toEndOf="@+id/Register_description_Input"
+        app:layout_constraintStart_toStartOf="@+id/Account_checkBox_robot"
+        app:layout_constraintTop_toBottomOf="@+id/Account_checkBox_robot"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Register_Validation_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/New_Account_Validation_button"
+        app:layout_constraintEnd_toEndOf="@+id/Register_Validation"
+        app:layout_constraintStart_toStartOf="@+id/Register_Validation"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Validation" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

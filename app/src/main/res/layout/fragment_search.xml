@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    android:padding="@dimen/default_marginLittle">
+
+    <TextView
+        android:id="@+id/search_Title1"
+        style="@style/Default_Orange_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_byVehicle"
+        android:layout_marginTop="@dimen/default_marginTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search_Title2"
+        style="@style/Default_Orange_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/default_marginSmall"
+        android:text="@string/search_byPiece"
+        android:layout_marginBottom="@dimen/default_marginLeft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <ImageView
+        android:id="@+id/search_vehicle_brand"
+        android:layout_width="match_parent"
+        app:layout_constraintCircleRadius="@dimen/item_margin"
+        android:layout_height="@dimen/default_marginLeft"
+        android:layout_marginTop="@dimen/default_marginSmall"
+        android:background="@color/Orange"
+        app:layout_constraintTop_toBottomOf="@+id/search_Title1" />
+
+    <TextView
+        android:id="@+id/search_brand_text"
+        style="@style/Default_white_Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:text="@string/search_page_item_brand"
+        app:layout_constraintBottom_toBottomOf="@+id/search_vehicle_brand"
+        app:layout_constraintStart_toStartOf="@+id/search_vehicle_brand"
+        app:layout_constraintTop_toTopOf="@+id/search_vehicle_brand" />
+
+    <TextView
+        android:id="@+id/search_brand_text_Input"
+        style="@style/Default_white_Subtitle"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_page_item_brand"
+        android:layout_marginRight="@dimen/default_marginLittle"
+        app:layout_constraintBottom_toBottomOf="@+id/search_vehicle_brand"
+        app:layout_constraintEnd_toStartOf="@+id/search_arrow_brand"
+        app:layout_constraintTop_toTopOf="@+id/search_vehicle_brand" />
+
+    <ImageView
+        android:id="@+id/search_arrow_brand"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_purple_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/search_vehicle_brand"
+        app:layout_constraintEnd_toEndOf="@+id/search_vehicle_brand"
+        app:layout_constraintTop_toTopOf="@+id/search_vehicle_brand" />
+
+    <ImageView
+        android:id="@+id/search_vehicle_model"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_marginLeft"
+        android:background="@color/Orange"
+        app:layout_constraintTop_toBottomOf="@+id/search_vehicle_brand" />
+
+    <TextView
+        android:id="@+id/search_model_text"
+        style="@style/Default_white_Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:text="@string/search_page_item_model"
+        app:layout_constraintBottom_toBottomOf="@+id/search_vehicle_model"
+        app:layout_constraintStart_toStartOf="@+id/search_vehicle_model"
+        app:layout_constraintTop_toTopOf="@+id/search_vehicle_model" />
+
+    <TextView
+        android:id="@+id/search_model_text_Input"
+        style="@style/Default_white_Subtitle"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:text="@string/search_page_item_model"
+        android:layout_marginRight="@dimen/default_marginLittle"
+        app:layout_constraintBottom_toBottomOf="@+id/search_vehicle_model"
+        app:layout_constraintEnd_toStartOf="@+id/search_arrow_model"
+        app:layout_constraintTop_toBottomOf="@+id/search_vehicle_brand" />
+
+    <ImageView
+        android:id="@+id/search_arrow_model"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_purple_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/search_vehicle_model"
+        app:layout_constraintEnd_toEndOf="@+id/search_vehicle_model"
+        app:layout_constraintTop_toTopOf="@+id/search_vehicle_model" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vertical_recycler_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="310dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_Title2" />
+
+    <Button
+        android:id="@+id/search_pickUpButton"
+        style="@style/Default_white_Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/default_marginSmall"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/orangeback_purpleborrder"
+        android:text="@string/search_page_slogan"
+        app:layout_constraintBottom_toTopOf="@+id/search_Title2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_vehicle_model" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

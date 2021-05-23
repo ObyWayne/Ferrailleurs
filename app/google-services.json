@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372594464726",
+    "project_id": "ferrailleurs-8d9f4",
+    "storage_bucket": "ferrailleurs-8d9f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372594464726:android:2192c6f0e76edb7d953677",
+        "android_client_info": {
+          "package_name": "fr.ObiWayne.ferrailleurs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372594464726-odl1pl7c0vp9809ppn8gu2va8qu8h7j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbRFiyePec0sdz7UkPAJ6AN5YDrYMjp_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372594464726-odl1pl7c0vp9809ppn8gu2va8qu8h7j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

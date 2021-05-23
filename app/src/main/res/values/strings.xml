@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Ferrailleurs</string>
+
+    <!-- ___________________________________________________________________________________________ -->
+                                        <!-- Item-->
+    <!-- ___________________________________________________________________________________________ -->
+
+            <string name="item_pieces_name">Nom de la pièce</string>
+            <string name="item_pieces_type">Type de la pièce</string>
+            <string name="item_pieces_description">Description de la pièces</string>
+            <string name="item_pieces_model">Modèle</string>
+            <string name="item_pieces_brand">Marque</string>
+            <string name="item_posted_byText"> posted by</string>
+            <string name="item_posted_by"> Name</string>
+
+    <!-- ___________________________________________________________________________________________ -->
+                                                <!-- Error -->
+    <!-- ___________________________________________________________________________________________ -->
+
+
+            <string name="Error_not_all_field">Veuillez renseigner toutes vos informations</string>
+            <string name="Error_Password_no_match">Les mots de passe ne correspond pas</string>
+            <string name="Error_Password_too_weak">Votre mots de passe doit contenir 5 carateres ou plus</string>
+            <string name="Error_checkBox">Veuillez confirmer que vous n\'etes pas un robot </string>
+            <string name="Error_connected">Veuillez vous connectez pour publier une piece </string>
+            <string name="Error_Null">Veuillez remplir ce champ</string>
+
+
+    <!-- ___________________________________________________________________________________________ -->
+                                        <!-- Page d'acceuil -->
+    <!-- ___________________________________________________________________________________________ -->
+
+            <string name="home_page_title">Dernières pièces</string>
+            <string name="search_pieces">Recherche effectuée </string>
+            <string name="search_previous_button">Recherche effectuée </string>
+
+
+    <!-- ___________________________________________________________________________________________ -->
+    <!-- Page Recherche-->
+    <!-- ___________________________________________________________________________________________ -->
+
+            <string name="search_page_slogan">Dégoter ma pièce</string>
+            <string name="search_specific">Recherche triée par :</string>
+            <string name="search_byVehicle"> Rechercher par véhicule</string>
+            <string name="search_byPiece"> Rechercher par pièce</string>
+
+    <!-- Véhicule-->
+            <string name="search_page_item_année">Année</string>
+            <string name="search_page_item_carburant">Carburant</string>
+            <string name="search_page_item_brand">Marque</string>
+            <string name="search_page_item_model">Modèle</string>
+
+
+    <!-- Pièces-->
+            <string name="search_page_item_moteur">Moteur</string>
+            <string name="search_page_item_chasis">Chasis</string>
+            <string name="search_page_item_vitesse">Boite de vitesses</string>
+            <string name="search_page_item_echappement">Echappement</string>
+            <string name="search_page_item_frein">Freins</string>
+            <string name="search_page_item_accesoires">Accesoires</string>
+
+
+    <!-- ___________________________________________________________________________________________ -->
+                                        <!-- Page de chargement -->
+    <!-- ___________________________________________________________________________________________ -->
+
+            <string name="loading_page_title">Les Ferrailleurs</string>
+            <string name="loading_page_subtitle">trouver les pièces de votre tacot adoré</string>
+
+
+
+
+
+    <!-- ___________________________________________________________________________________________ -->
+                                        <!-- Page Publier -->
+    <!-- ___________________________________________________________________________________________ -->
+            <string name="publier_title">Publier</string>
+            <string name="publier_name">Titre</string>
+            <string name="publier_Model">Modele du véhicule</string>
+            <string name="publier_description">Description</string>
+            <string name="publier_addLink">Ajouter un lien </string>
+            <string name="publier_type">Référence</string>
+            <string name="publier_dlImage">Charger une image</string>
+
+        <string-array name="publier_spinner_brand">
+
+                <item> Abarth </item>
+                <item> Alfa Romeo </item>
+                <item> Audi </item>
+                <item> Aston Martin </item>
+                <item> Bentley </item>
+                <item> BMW </item>
+                <item> Mercedes </item>
+                <item> Panhard </item>
+                <item> Peugeot </item>
+                <item> Triumph </item>
+                <item> Volkswagen </item>
+                <item> Volvo </item>
+        </string-array>
+
+    <string-array name="publier_spinner_type">
+
+            <item>Allumage et démarrage</item>
+            <item>Boite de Vitesse</item>
+            <item>Carburation et filtration</item>
+            <item>Carroserie et tôleris</item>
+            <item>Circuit de refroidissement</item>
+            <item>Eclairage et Electricité </item>
+            <item>Equipement interieur</item>
+            <item>Klaxons et avertisseurs</item>
+            <item>Reservoir</item>
+            <item>Chasis et suspension </item>
+            <item>Roue, jantes et accesoires</item>
+    </string-array>
+
+    <!-- ___________________________________________________________________________________________ -->
+    <!-- Page Favori -->
+    <!-- ___________________________________________________________________________________________ -->
+            <string name="Favorite_name">Favori</string>
+            <string name="Favorite_title">Mes Favoris</string>
+            <string name="Favorite_category">Marques clées</string>
+
+
+            <string name="Favorite_NoAccount">Connecter vous pour voir vos favoris </string>
+
+
+    <!-- ___________________________________________________________________________________________ -->
+    <!-- Partie Compte -->
+    <!-- ___________________________________________________________________________________________ -->
+
+    <!-- Page d'identification -->
+            <string name="Account_SignIn">Mon Compte</string>
+            <string name="Account_Identification_input">Identifiant</string>
+            <string name="Account_Passworld_input">Mot de Passe</string>
+            <string name="Account_Connexion_button">Se connecter</string>
+            <string name="Account_Déconnexion_button">Se déconnecter</string>
+            <string name="Account_NewUser_button">Pas encore de compte ?</string>
+
+    <!-- Page de nouveau membre -->
+            <string name="New_Account_NewAccount">Devenez un ferrailleur</string>
+            <string name="New_Account_First_Name_input">Saisissez votre Nom</string>
+            <string name="New_Account_Second_Name_input">Saisissez votre prénom</string>
+            <string name="New_Account_Email_input">Saisissez votre adresse email</string>
+            <string name="New_Account_Password_input">Saisissez votre Mot de Passe</string>
+            <string name="New_Account_Password_Confirm_input">Confirmation de votre Mot de Passe</string>
+            <string name="New_Account_Description_input">Description (Optionnel)</string>
+            <string name="New_Account_Robot">Je ne suis pas un robot</string>
+            <string name="New_Account_Validation_button">Validation</string>
+            <string name="Reset_abord_button">Abandonner</string>
+            <string name="Reset_confirm_button">Valider</string>
+
+
+
+    <!-- Page Compte Utilisateur -->
+
+            <string name="My_Account_GlobalInfo">Information générales</string>
+            <string name="My_Account_My_Account">Mon compte</string>
+            <string name="My_Account_InfoName">Mon Nom</string>
+            <string name="My_Account_InfoLastName">Mon Prénom</string>
+            <string name="My_Account_Description">Ma Description</string>
+            <string name="My_Account_post"> 150 </string>
+            <string name="My_Account_nbrePost"> Mes posts</string>
+            <string name="My_Account_contact_information"> Mes coordonnées</string>
+            <string name="My_Account_UserContact"> Adresse email actuelle</string>
+
+
+            <string name="My_Account_Edit">Informations</string>
+            <string name="My_Account_Edit_PW">Modifier mon Mot de passe</string>
+            <string name="My_Account_Suppr">Supprimer mon compte</string>
+            <string name="My_Account_forgetPw">Mot de Passe oublié ?</string>
+
+
+            <string name="My_Account_welcome">Heureux de vous revoir !</string>
+            <string name="My_Account_New_Password_button">Changer de Mot de Passe</string>
+
+            <string name="Reset_Password_New_Password_rest">Mot de Passe actuel</string>
+            <string name="Reset_Password_New_Password">Nouveau Mot de Passe</string>
+            <string name="Reset_Password_ConfirmNew_Password">Confirmer votre Mot de Passe</string>
+
+            <string name="My_Account_Delete_Account">Supprimer le compte </string>
+            <string name="My_Account_Delete_Account2">Cette action est irréversible </string>
+            <string name="My_Account_Notification_button">Notifications</string>
+            <string name="My_Account_Data_Base">Utilisation des données de stockage</string>
+            <string name="My_Account_SignOut_button">Se déconnecter</string>
+
+
+
+
+    <!-- ___________________________________________________________________________________________ -->
+                                        <!-- Page Bottom view -->
+    <!-- ___________________________________________________________________________________________ -->
+            <string name="bottom_view_home"> Accueil</string>
+            <string name="bottom_view_rechercher"> Rechercher</string>
+            <string name="bottom_view_favorie"> Favori</string>
+            <string name="bottom_view_publier"> Publier</string>
+            <string name="bottom_view_compte"> Mon compte</string>
+            <string name="bottom_view_plus"> Plus</string>
+
+
+
+
+</resources>

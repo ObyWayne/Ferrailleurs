@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="500dp"
+    android:padding="@dimen/default_marginLittle"
+    android:background="@drawable/whiteback_purpleborrder"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/popUp_view_separation"
+        android:layout_width="1dp"
+        android:layout_height="190dp"
+        android:background="@color/Orange"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/popUp_Title_Model" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/popUp_Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alternateur_1"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popUp_Name"
+        style="@style/Default_Orange_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/item_pieces_name"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toStartOf="@+id/popUp_CloseButton"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <ImageView
+        android:id="@+id/popUp_CloseButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_close"
+        android:layout_marginRight="@dimen/default_marginLittle"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/popUp_Title_Description"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_marginTop"
+        android:text="Description : "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/popUp_Description"
+        style="@style/Default_subtitle_pieces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+        android:text="@string/item_pieces_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_Title_Description" />
+
+
+    <TextView
+        android:id="@+id/popUp_Title_Model"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modèle :"
+        android:layout_marginTop="@dimen/default_marginLong"
+        app:layout_constraintEnd_toStartOf="@+id/popUp_view_separation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_Title_Description" />
+
+    <TextView
+        android:id="@+id/popUp_Model"
+        style="@style/Default_subtitle_pieces"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/item_pieces_model"
+        app:layout_constraintEnd_toStartOf="@+id/popUp_view_separation"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_Title_Model" />
+
+    <TextView
+        android:id="@+id/popUp_Title_Brand"
+        style="@style/Default_Orange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marque :"
+        android:layout_marginTop="@dimen/default_marginLong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popUp_view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_Title_Description" />
+
+    <TextView
+        android:id="@+id/popUp_Brand"
+        style="@style/Default_subtitle_pieces"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/item_pieces_brand"
+        android:layout_marginTop="@dimen/item_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popUp_view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_Title_Brand" />
+
+    <ImageView
+        android:id="@+id/popUp_FavButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/default_marginSmall"
+        android:src="@drawable/ic_empty_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/popUp_view_separation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_Model" />
+
+    <ImageView
+        android:id="@+id/popUp_CopyButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/default_marginSmall"
+        android:src="@drawable/ic_copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popUp_view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_Brand" />
+
+    <TextView
+        android:id="@+id/popUp_more_info"
+        style="@style/Default_subtitle_popUp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Plus d'information"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popUp_view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_CopyButton" />
+
+    <TextView
+        android:id="@+id/popUp_more_Fav"
+        style="@style/Default_subtitle_popUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favori"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/popUp_view_separation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_CopyButton" />
+
+    <TextView
+        android:id="@+id/popUp_posted_ByTexte"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/item_posted_byText"
+        style="@style/Default_subtitle_pieces"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_view_separation" />
+
+    <TextView
+        android:id="@+id/popUp_posted_By"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/item_posted_by"
+        style="@style/Default_subtitle_pieces"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUp_posted_ByTexte" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

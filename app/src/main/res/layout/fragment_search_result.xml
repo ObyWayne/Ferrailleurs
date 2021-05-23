@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/LightBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/item_margin">
+
+
+    <ImageView
+        android:id="@+id/SpecificSearch_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/orangeborrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Default_Orange_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search_specific"
+        android:layout_marginLeft="@dimen/item_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/SpecificSearch_title"
+        app:layout_constraintStart_toStartOf="@+id/SpecificSearch_title"
+        app:layout_constraintTop_toTopOf="@+id/SpecificSearch_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vertical_recycler_specific_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/SpecificSearch_title"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/SpecificSearch_item1"
+        style="@style/Default_white_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="multiply"
+        android:text="@string/search_byPiece"
+        android:padding="@dimen/default_marginPadding"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:background="@drawable/orangeback_purpleborrder"
+        android:layout_marginRight="@dimen/default_marginSmall"
+        android:layout_marginTop="@dimen/default_marginLittle"
+        app:layout_constraintBottom_toTopOf="@+id/vertical_recycler_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SpecificSearch_title" />
+
+    <TextView
+        android:id="@+id/SpecificSearch_item2"
+        style="@style/Default_white_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_marginSmall"
+        android:background="@drawable/orangeback_purpleborrder"
+        android:backgroundTintMode="multiply"
+        android:gravity="center"
+        android:padding="@dimen/default_marginPadding"
+        android:text="@string/search_byPiece"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/SpecificSearch_title"
+        app:layout_constraintEnd_toEndOf="@+id/SpecificSearch_title" />
+
+    <TextView
+        android:id="@+id/SpecificSearch_item3"
+        style="@style/Default_white_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_marginSmall"
+        android:background="@drawable/orangeback_purpleborrder"
+        android:backgroundTintMode="multiply"
+        android:gravity="center"
+        android:padding="@dimen/default_marginPadding"
+        android:text="@string/search_byPiece"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/SpecificSearch_title"
+        app:layout_constraintEnd_toEndOf="@+id/SpecificSearch_title"
+        app:layout_constraintTop_toTopOf="@+id/SpecificSearch_title" />
+
+    <ImageView
+        android:id="@+id/SpecificSearch_closeB"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_close"
+        android:layout_marginRight="@dimen/default_marginLittle"
+        android:layout_marginTop="@dimen/default_marginLittle"
+        app:layout_constraintEnd_toEndOf="@+id/SpecificSearch_title"
+        app:layout_constraintTop_toTopOf="@+id/SpecificSearch_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

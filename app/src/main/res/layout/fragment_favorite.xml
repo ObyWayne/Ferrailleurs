@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/LightBlue"
+    android:padding="@dimen/default_marginLittle">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textFavorite"
+        style="@style/Default_Orange_title"
+        android:text="@string/Favorite_category"
+        android:layout_marginTop="@dimen/item_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_recycler_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFavorite" />
+
+    <TextView
+        android:id="@+id/textViewHome"
+        style="@style/Default_Orange_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Favorite_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_recycler_favorite" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vertical_recycler_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHome" />
+
+    <ImageView
+        android:id="@+id/Favorite_NoAccount_Image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/Grey"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHome" />
+
+    <TextView
+        android:id="@+id/Favorite_NoAccount_Texte"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/Favorite_NoAccount"
+        android:background="@drawable/orangeborrder"
+        android:gravity="center"
+        android:visibility="invisible"
+        style="@style/Default_subtitle_pieces"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHome" />
+
+    <Button
+        android:id="@+id/Favorite_NoAccount_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Account_Connexion_button"
+        style="@style/Default_white_Subtitle"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Favorite_NoAccount_Image"
+        app:layout_constraintEnd_toEndOf="@+id/Favorite_NoAccount_Image"
+        app:layout_constraintStart_toStartOf="@+id/Favorite_NoAccount_Image" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
