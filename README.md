@@ -1,5 +1,4 @@
 # Ferrailleurs
-===============
 
 Les Ferailleurs est une application Android développée par :
 	- Pierre Morbois
